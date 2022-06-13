@@ -128,12 +128,13 @@ Also, some cross correlation among features per matrix:
 ## Modeling 
 Before modeling I checked Variance Inflation Factor (VIF) and Permutation Importance. VIF showed no multicollinearity. Permutation Importance interestingly reported condition and region are not influencing models as below:
 ![](images/ColumnImportance.png)
-￼
+
 I only picked up 5 features per permutation importance list: 'year', 'cylinders', 'odometer', 'manufacturer' and 'drive' to build models. Besides, I could include region and condition to categorize properly even though the attribute importance thinks differently per evaluation steps.
 
 I ran a model complexity analysis to decide about degree complexity:
 ![](images/Complexity2.png)
-￼
+
+
 I kept it at degree=2 for all models. I built 4 models: Ridge, LASSO, Linear Regression and Linear Regression with LASSO feature selection after several evaluations.
 
 ## Evaluation 
@@ -141,18 +142,20 @@ I decided to include region and condition to categorize properly even though the
 
 I build 4 regression models Linear Regression with LASSO feature selection outperformed others in mean absolute error:
 ![](images/trainingerror.png)
-￼
+
 
 The model Linear Regression with LASSO feature selection outperformed all others, the model generated and kept only 344 feature degree=2 combinations.
 ![](images/Coefficients.png)
-￼
+
+
 Condition is shown as a negative influencer in above and below charts:
 ![](images/CoefficientsValues.png)
-￼
+
 
 The comparison of actual and predicted price shown in the below image for visualization:
 ![](images/ActualversusPredictedFeatureSelectionbyLASSO.png)
-￼
+
+
 Region assignment may need to be reevaluated in later phases as a side note.
 
 ## Deployment 
