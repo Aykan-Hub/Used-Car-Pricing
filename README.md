@@ -13,10 +13,11 @@ Used Car Dealership would like to understand what factors weigh in pricing a use
 
 
 ## Data Understanding
-The dataset consists of these columns: id, region, price, year, manufacturer, model, condition, cylinders, fuel, odometer, title_status, transmission, VIN, drive, size, type, paint_color and state. Among those columns id is redundant; region, price and state have data consistency, there is no missing data; the rest of columns have all missing data. Records must be analyzed to remove duplicated information. Analyze all string data objects and come up with a method for each to convert some sort of numeric feature.
+The dataset consists of these columns: _id, region, price, year, manufacturer, model, condition, cylinders, fuel, odometer, title_status, transmission, VIN, drive, size, type, paint_color and state_. Among those columns _id_ is redundant; region, price and state have data consistency, there is no missing data; the rest of columns have all missing data. Records must be analyzed to remove duplicated information. Analyze all string data objects and come up with a method for each to convert some sort of numeric feature.
 
 ### Understanding Vehicle Identification Number (VIN)
-For more information about what VIN is please refer to this wiki page:   [https://en.wikipedia.org/wiki/Vehicle_identification_number](https://en.wikipedia.org/wiki/Vehicle_identification_number).
+For more information about what VIN is please refer to this wiki page:   [https://en.wikipedia.org/wiki/Vehicle_identification_number](https://en.wikipedia.org/wiki/Vehicle_identification_number). This understanding about VIN is needed to fill missing columns, that's why it is a valuable information to get familiar with.
+
 A VIN consists of Manufacturer, Brand/Model/type, Year, Factory and Serial Number as shown in below image:
 ![](images/VIN.jpg)
 ￼
