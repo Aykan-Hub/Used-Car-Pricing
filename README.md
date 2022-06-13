@@ -164,7 +164,7 @@ Based on the research and model outcome, the influential features of a used vehi
 - Region
 - Odometer
 
-Remarks about positive price points:
+Remarks about positively impacting price points:
 - New vehicles are high priced at the square power of year
 - The product of year and drive influence higher price
 - The product of year and condition influence higher price
@@ -173,8 +173,11 @@ Remarks about positive price points:
 - The coefficient of year and along manufacturer influence higher price
 - Manufacturers Volkswagen, Jeep, Rover, Mitsubishi, Mazda, Honda, Chrysler and Cadillac influence higher price.
 
-Remarks about negative price points:
+Remarks about negatively impacting price points:
 - Higher odometer reading on newer models penalize price, as condition worsens lower the price. 
 - Manufacturers BMW, Lexus, Acura, Kia, Ford, Hyundai and Audi tend to have lower prices.
+
+### Closing Remarks for Next Steps
+Region column assignment order may need to be reevaluated for reflecting prices properly. Also, condition column should be looked at for not showing up in permutation importance at higher degrees in later phases. Models should also be fine tuned for better accuracy and prediction as outliers exist throughout.
 
 
